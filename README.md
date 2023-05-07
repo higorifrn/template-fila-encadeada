@@ -113,22 +113,22 @@ Segue a relação de tarefas a serem observadas na implementação de cada méto
   - [ ] Deve retornar um boolean True se não houver itens (Nó) na fila ou False, caso contrário
 - [ ] **(2pts)** Implementar o método **is_full()**
   - [ ] Deve retornar um boolean True se houver itens (Nó) na fila ou False, caso contrário
-- [ ] **(4pts)** Implementar o método **enqueue()**, o qual deve receber como entrada um valor para criar um nó que deverá ser inserido na fila
+- [ ] **(5pts)** Implementar o método **enqueue()**, o qual deve receber como entrada um valor para criar um nó que deverá ser inserido na fila
   - [ ] Criar um objeto Nó a partir do valor recebido pelo método
   - [ ] Deve retornar um boolean True se conseguir inserir um item (Nó) na fila
   - [ ] Caso a fila tenha alcançado a sua capacidade máxima deverá lançar uma Exception com uma mensagem de erro relativo ao ocorrido, senão o item (Nó) deve ser inserido na fila e método deverá retornar um boolean True
 - [ ] **(5pts)** Implementar o método **dequeue()**, o qual deve retornar o primeiro item (Nó) da fila e remover esse item da fila
   - [ ] Caso a fila esteja vazia deverá lançar uma Exception com uma mensagem de erro
   - [ ] Caso a fila possua um ou mais itens, o primeiro item (Nó) da fila deve ser removido e em seguida retornado pelo método
-- [ ] **(2pts)** Implementar o método **peek_first()**, o qual deve retornar o primeiro item (Nó) da fila SEM remover esse item da fila
+- [ ] **(1pts)** Implementar o método **peek_first()**, o qual deve retornar o primeiro item (Nó) da fila SEM remover esse item da fila
   - [ ] Caso a fila esteja vazia deverá retornar um None
   - [ ] Caso a fila possua um ou mais itens, o primeiro item (Nó) inserido na fila deve ser retornado pelo método
-- [ ] **(2pts)** Implementar o método **peek_last()**, o qual deve retornar o último item (Nó) da fila SEM remover esse item da fila
+- [ ] **(1pts)** Implementar o método **peek_last()**, o qual deve retornar o último item (Nó) da fila SEM remover esse item da fila
   - [ ] Caso a fila esteja vazia deverá retornar um None
   - [ ] Caso a fila possua um ou mais itens, o último item (Nó) inserido na fila deve ser retornado pelo método
 
 - [ ] **(3pts)** Implementar o método **display()**, o qual deve retornar uma lista com os valores (atributo dado) dos itens (Nó) inseridos na fila
   - [ ] Caso a fila esteja vazia deverá retornar uma lista vazia []
   - [ ] Caso a fila possua um ou mais itens, o primeiro elemento da lista deve ser o valor do dado do primeiro item (Nó) na fila, seguido das demais valores que compõem a fila (do primeiro ao último), nessa ordem
-- [ ] **(2pts)** Implementar o método **size()**, o qual deve retornar um int
+- [ ] **(1pts)** Implementar o método **size()**, o qual deve retornar um int
   - [ ] O método deverá retornar ZERO, caso a fila esteja vazia, ou, caso possua algum item na fila, o valor relativo à quantidade de itens presentes na fila
