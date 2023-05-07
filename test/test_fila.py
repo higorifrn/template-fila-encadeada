@@ -7,7 +7,7 @@ from no import No
 from fila import Fila
 
 
-# ---- INÍCIO: teste método is_empty() ---------------------------------------------------
+# ---- INÍCIO: teste método is_empty()
 
 def test_is_empty_true():
 
@@ -19,7 +19,10 @@ def test_is_empty_true():
 
     fila = Fila()
 
-    assert fila.is_empty() == True and fila.size() == 0
+    result = fila.is_empty()
+    expected = True
+
+    assert result == expected and fila.size() == 0
 
 
 def test_is_empty_false():
@@ -34,9 +37,51 @@ def test_is_empty_false():
     fila.enqueue(1)
     fila.enqueue(2)
 
-    assert fila.is_empty() == False and fila.size() > 0
+    result = fila.is_empty()
+    expected = False
 
-# ---- FIM: teste método is_empty() -----------------------------------------------------
+    assert result == expected and fila.size() == 2
+
+# ---- FIM: teste método is_empty()
+
+
+# ---- INÍCIO: teste método is_full()
+
+def test_is_full_true():
+
+    try:
+        exists = os.path.exists("fila.py")
+        assert exists == True
+    except:
+        sys.exit()
+
+    fila = Fila(1)
+    fila.enqueue(1)
+
+    result = fila.is_full()
+    expected = True
+
+    assert result == expected and fila.size() == 1
+
+
+def test_is_full_false():
+
+    try:
+        exists = os.path.exists("fila.py")
+        assert exists == True
+    except:
+        sys.exit()
+
+    fila = Fila(3)
+    fila.enqueue(1)
+    fila.enqueue(2)
+
+    result = fila.is_full()
+    expected = False
+
+    assert result == expected and fila.size() == 2
+
+# ---- FIM: teste método is_full()
 
 
 # ---- INÍCIO: teste método enqueue() ---------------------------------------------------

@@ -11,7 +11,15 @@ class Fila:
 
 
     # verifica se a fila está vazia
+    # retornar True se a fila estiver vazia e False caso contrário
     def is_empty(self) -> bool:
+        # implementação do método
+        pass
+
+
+    # verifica se a fila está cheia
+    # retornar True se a fila estiver cheia e False caso contrário
+    def is_full(self) -> bool:
         # implementação do método
         pass
 
