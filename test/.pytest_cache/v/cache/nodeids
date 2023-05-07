@@ -1,0 +1,7 @@
+[
+  "test_fila.py::test_enqueue_em_fila_vazia",
+  "test_fila.py::test_enqueue_em_pilha_cheia",
+  "test_fila.py::test_enqueue_em_pilha_normal",
+  "test_fila.py::test_fila_is_empty_false",
+  "test_fila.py::test_fila_is_empty_true"
+]
